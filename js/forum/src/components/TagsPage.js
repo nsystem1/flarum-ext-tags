@@ -38,7 +38,7 @@ export default class TagsPage extends Component {
                 return (
                   <li className={'TagTile ' + (tag.color() ? 'colored' : '')}
                     style={{backgroundColor: tag.color()}}>
-                    <a className="TagTile-info" href={app.route.tag(tag)} config={m.route}>
+                    <a className="TagTile-info" href={app.route.tag(tag)} config={m.route} style={{background: tag.image()}}>
                       <h3 className="TagTile-name">{tag.name()}</h3>
                       <p className="TagTile-description">{tag.description()}</p>
                       {children
